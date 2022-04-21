@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<style type="text/css" media="screen">
+
+		.d1,.d2{
+			float: left;
+		}
+		.d1{
+			width: 150px;
+			height: 200px;
+			background: red;
+		}
+		.d2{
+			width: 150px;
+			height: 200px;
+			background: green;
+		}
+
+		.d3{
+			width: 150px;
+			height: 200px;
+			background: yellow;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+
+<!-- 在浮动元素的父元素上，添加overflow:hidden，解决浮动的问题 -->
+<div style="border:5px solid pink;overflow: hidden;">
+	<div class="d1"></div>
+	<div class="d2"></div>
+	<div class="d3"></div>	
+</div>
+<h2>你好</h2>
+
+
+</body>
+</html>

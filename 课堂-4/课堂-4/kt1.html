@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<style type="text/css" media="screen">
+		body{
+			margin:0; 
+		}
+		.hd{
+			background: #333;
+		    color: #b0b0b0;
+		    font-size: 12px;
+		    line-height: 40px;
+		    height: 40px;
+		    padding: 0 125px;
+		}
+		.hd a{
+			color: #b0b0b0;
+			text-decoration: none;
+		}
+		/* 伪类选择器: 匹配元素在某一个状态下的样式 */
+		/* hover  鼠标悬浮 */
+		.hd a:hover{
+			color:#fff; /* 白色 */
+		}
+		/* active 激活状态  按下左/右键 */
+		.hd a:active{
+			background: yellow;
+		}
+
+		.l{
+			float: left;
+		}
+		.r{
+			float: right;
+		}
+		.sp{
+			color: #474747;
+			width: 12px;
+			display: inline-block;
+			text-align: center;
+		}
+		.kl{
+			float: left;
+			width: 150px;
+			height: 40px;
+		}
+		.kr{
+			float:right;
+			width: 150px;
+			height: 40px;
+		}
+		.hd a:after{
+			content: '|';
+			color: #474747;
+			margin-left: 8px;
+    		margin-right: 5px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="hd">
+
+	<div class="l">
+		<a href="">小米商城</a>
+		<a href="">MIUI</a>
+		<a href="">IoT</a>
+		<a href="">云服务</a>
+		<a href="">天星数科</a>
+		<a href="">有品</a>
+		<a href="">小爱开放平台</a>
+		<a href="">企业团购</a>
+		<a href="">资质证照</a>
+		<a href="">协议规则</a>
+		<a href="">下载app</a>
+		<a href="">Select Location</a>
+	</div>
+	
+	<div class="r">
+		<a href="">登录</a>
+		<a href="">注册</a>
+		<a href="">消息通知</a>
+	</div>
+</div>
+</body>
+</html>

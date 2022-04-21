@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+	/* 伪元素：不是真正的html标签
+	而是通过css，模拟出来的html元素 */
+	
+	.d1:after{
+		content: 'Css';
+	}
+	/* 模拟出的是一个什么样的css元素：
+	相当于在d1的末尾，加了一个span标签，内容是content样式的值。 */
+
+	.d2:after,.d2:before{
+		content: '';
+		display:inline-block;
+		width: 150px;
+		height: 1px;
+		background: green;
+		vertical-align: middle;
+	}
+	</style>
+	
+
+</head>
+<body>
+
+	<div class="d1">
+		Hello
+	</div>
+
+	<hr>
+	<div>
+		Hello
+		<span>Css</span>
+	</div>
+	<hr>
+	<div class="d2">
+		Hello
+	</div>
+	
+</body>
+</html>
